@@ -9,12 +9,6 @@ export const Sidebar = () => {
   return (
     <div className="fixed top-0 left-0 h-screen w-16
     flex flex-col bg-primary text-secondary shadow-lg">
-      <i>1</i>
-      <i>2</i>
-      <i>3</i>
-      <i>4</i>
-      <i>5</i>
-
       <SidebarIcon icon={<FaGripfire size="28"/>}/>
       <SidebarIcon icon={<FaGithubAlt size="28"/>}/>
       <SidebarIcon icon={<FaEmpire size="28"/>}/>
@@ -24,8 +18,12 @@ export const Sidebar = () => {
   )
 }
 
-export const SidebarIcon = ({icon}: any) => (
-  <div className="sidebar-icon">
+export const SidebarIcon = ({icon, text = 'tooltip'}: any, ) => (
+  <div className="sidebar-icon group">
     {icon}
+
+    <span className="sidebar-tooltip group-hover:scale-100">
+      {text}&#128161;
+    </span>
   </div>
 )
