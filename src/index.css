@@ -3,16 +3,52 @@
 @tailwind utilities;
 
 @layer components {
-  .sidebar-icon {
-    @apply relative flex items-center justify-center
-    h-12 w-12 mt-2 mx-auto shadow-lg bg-gray-800 text-green-500
-    hover:bg-green-600 hover:text-green-50 cursor-pointer hover:rounded-xl
-    transition-all duration-300 ease-linear;
+  .nav-item {
+    @apply
+    relative
+    flex
+    items-center
+    justify-center
+    h-12
+    w-16
+    mt-2
+    mx-auto
   }
 
-  .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
-    text-white bg-gray-900 text-xs font-bold transition-all duration-100
-    scale-0 origin-left;
+  .nav-item__active {
+    @apply
+    text-blue-500
+    before:absolute
+    before:content-['']
+    before:border-b-2
+    before:border-b-blue-500
+    before:w-16
+    before:h-2
+    before:-bottom-2.5
+  }
+
+  .nav-link {
+    @apply
+    pb-2
+  }
+
+  .nav-img {
+    @apply
+    text-3xl
+    hover:text-gray-500
+  }
+
+  .left-sidebar__list-item {
+    @apply
+    relative
+    pr-3
+    after:absolute
+    after:content-['']
+    after:bg-gray-400
+    after:right-1
+    after:bottom-2
+    after:w-1
+    after:h-1
+    after:rounded-full
   }
 }
