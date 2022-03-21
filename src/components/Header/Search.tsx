@@ -1,7 +1,11 @@
 export const Search = () => {
   return (
-    <div>
-      Search
+    <div className="bg-white">
+      <input
+        type="text"
+        placeholder="Search Facebook"
+        className="rounded-full"
+      />
     </div>
   )
 }
