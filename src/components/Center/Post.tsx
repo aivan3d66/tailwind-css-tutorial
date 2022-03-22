@@ -8,8 +8,8 @@ export const Post = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center p-3">
             <Avatar/>
-            <div>
-              <div className="text-gray-800">
+            <div className="ml-3">
+              <div className="text-gray-800 text-sm font-medium">
                 Tom Russo
               </div>
               <div className="text-xs">
