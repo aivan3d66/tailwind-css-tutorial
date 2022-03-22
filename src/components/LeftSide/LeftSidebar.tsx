@@ -12,7 +12,7 @@ export const LeftSidebar = () => {
         <ul className="list-none mb-20">
           {
             menuList.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="left-sidebar__list">
                 <a className="flex items-center py-2" href="/">
                   <img src={item.image} alt="" className="h-9 w-9"/>
                   <span className="pl-3">{item.name}</span>
