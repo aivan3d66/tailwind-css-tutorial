@@ -1,47 +1,5 @@
 import {Copyright} from "./Copyright";
-import app from "./../../img/app.png";
-import exchange from "./../../img/exchange.png";
-import calendar from "./../../img/calendar.png";
-import discord from "./../../img/discord.png";
-import drive from "./../../img/drive.png";
-import health from "./../../img/health.png";
-import settings from "./../../img/settings.png";
-
-type MenuItemType = {
-  name: string,
-  image: any
-}
-
-const menuList = [
-  {
-    name: 'Events',
-    image: calendar
-  },
-  {
-    name: 'Saved',
-    image: drive
-  },
-  {
-    name: 'Gaming',
-    image: discord
-  },
-  {
-    name: 'Fundraisers',
-    image: exchange
-  },
-  {
-    name: 'Memories',
-    image: app
-  },
-  {
-    name: 'Help & Support',
-    image: health
-  },
-  {
-    name: 'Settings & Privacy',
-    image: settings
-  }
-] as Array<MenuItemType>;
+import {menuList} from "../../data/menu/menu";
 
 export const LeftSidebar = () => {
   return (
