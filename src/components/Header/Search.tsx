@@ -7,7 +7,7 @@ export const Search = () => {
       <input
         type="text"
         placeholder="Search Facebook"
-        className="w-auto px-2 ml-2 bg-gray-200"
+        className="w-full px-2 ml-2 bg-gray-200"
       />
     </div>
   )
