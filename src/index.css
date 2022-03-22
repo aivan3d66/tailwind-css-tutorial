@@ -6,13 +6,17 @@
   .nav-item {
     @apply
     relative
-    flex
-    items-center
-    justify-center
-    h-12
-    w-16
-    mt-2
-    mx-auto
+    flex items-center justify-center
+    h-12 w-16 mt-2 mx-auto
+
+    hover:text-blue-500
+    hover:before:absolute
+    hover:before:content-['']
+    hover:before:border-b-2
+    hover:before:border-b-blue-500
+    hover:before:w-16
+    hover:before:h-2
+    hover:before:-bottom-2.5
   }
 
   .nav-item__active {
@@ -35,7 +39,6 @@
   .nav-img {
     @apply
     text-3xl
-    hover:text-gray-500
   }
 
   .left-sidebar__list-item {
