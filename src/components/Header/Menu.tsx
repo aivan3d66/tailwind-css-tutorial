@@ -38,7 +38,7 @@ export const Menu = () => {
             <AiOutlinePlaySquare className="nav-img"/>
           </a>
         </li>
-        <li >
+        <li className="nav-item">
           <a className="nav-link" href="#">
             <Avatar/>
           </a>
