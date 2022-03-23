@@ -16,7 +16,7 @@ const container = {
 
 export const RightSidebar = () => {
   return (
-    <section className="shadow-lg p-4 w-1/4 h-screen">
+    <section className="shadow-lg p-4 sm:w-56 lg:w-1/4  h-screen">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">Contacts</h2>
         <AiOutlineMenu className="text-gray-600"/>
@@ -25,7 +25,7 @@ export const RightSidebar = () => {
         variants={container}
         initial="hidden"
         animate="show"
-        className="list-none"
+        className="list-none w-56"
       >
         {
           contacts.map((item, index) => (
