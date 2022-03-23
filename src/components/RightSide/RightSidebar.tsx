@@ -1,5 +1,18 @@
+import {motion} from "framer-motion";
 import {AiOutlineMenu} from "react-icons/ai";
 import {contacts} from "../../data/users/users";
+
+const container = {
+  hidden: {opacity: 0, x: 1000},
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delayChildren: 1,
+      delay: 0.7
+    }
+  }
+}
 
 export const RightSidebar = () => {
   return (
@@ -8,7 +21,12 @@ export const RightSidebar = () => {
         <h2 className="text-xl font-bold">Contacts</h2>
         <AiOutlineMenu className="text-gray-600"/>
       </div>
-      <ul className="list-none">
+      <motion.ul
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="list-none"
+      >
         {
           contacts.map((item, index) => (
             <li key={index}>
@@ -21,7 +39,7 @@ export const RightSidebar = () => {
             </li>
           ))
         }
-      </ul>
+      </motion.ul>
     </section>
   )
 }
