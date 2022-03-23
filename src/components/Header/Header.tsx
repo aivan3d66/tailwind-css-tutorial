@@ -1,11 +1,27 @@
 import {Menu} from "./Menu";
 import {Search} from "./Search";
 import {Profile} from "./Profile";
+import {motion} from "framer-motion";
+
+const container = {
+  hidden: {opacity: 0, y: 1000},
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.7
+    }
+  }
+}
 
 export const Header = () => {
   return (
-    <section className="flex px-4 py-2 items-center justify-between shadow">
-      <div className="flex w-1/3">
+    <motion.section className="flex px-4 py-2 items-center justify-between shadow">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex w-1/3">
         <div className='logo'>
           <img
             className="h-9 rounded-full"
@@ -14,13 +30,23 @@ export const Header = () => {
           />
         </div>
         <Search/>
-      </div>
-      <div className='w-1/3'>
+      </motion.div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className='w-1/3'
+      >
         <Menu/>
-      </div>
-      <div className='w-1/3'>
+      </motion.div>
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className='w-1/3'
+      >
         <Profile/>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   )
 }
