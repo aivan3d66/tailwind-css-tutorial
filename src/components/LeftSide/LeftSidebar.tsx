@@ -16,7 +16,7 @@ const container = {
 
 export const LeftSidebar = () => {
   return (
-    <section className="shadow-lg p-4 sm:w-56 lg:w-1/4  h-screen">
+    <section className="mobile:hidden tablet:block shadow-lg p-4 sm:w-56 lg:w-1/4  h-screen">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">Home</h2>
         <a href="/" className='text-blue-400'>Create</a>
