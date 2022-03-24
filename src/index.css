@@ -62,4 +62,20 @@
         transition-all delay-100
         hover:text-blue-500
     }
+
+    .menu {
+        @apply
+        hidden
+        mobile:text-sm
+        tablet:flex
+        tablet:flex-row
+    }
+
+    .menu-btn {
+        @apply
+        mobile:block
+        mobile:m-auto
+        mobile:text-center
+        tablet:hidden
+    }
 }
