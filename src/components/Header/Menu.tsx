@@ -22,7 +22,8 @@ export const Avatar = () => {
 export const Menu = () => {
   return (
     <nav>
-      <ul className="list-none flex justify-between items-center menu">
+      <a className="menu-btn" href="/">Menu</a>
+      <ul className="menu">
         <li className="nav-item nav-item__active">
           <a className="nav-link" href="#">
             <AiOutlineHome className="nav-img"/>
