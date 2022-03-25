@@ -1,6 +1,6 @@
 export const Copyright = () => {
   return (
-    <div className="w-56">
+    <div className="w-60 mt-auto">
       <ul className="list-none flex flex-wrap">
         <li className="left-sidebar__list-item">
           <a className="text-gray-400 text-xs" href="/">Privacy</a>
@@ -12,10 +12,10 @@ export const Copyright = () => {
           <a className="text-gray-400 text-xs" href="/">Advertising</a>
         </li>
         <li className="left-sidebar__list-item">
-          <a className="text-gray-400 text-xs" href="/">Add Choices</a>
+          <a className="text-gray-400 text-xs" href="/">Cookies</a>
         </li>
         <li className="left-sidebar__list-item">
-          <a className="text-gray-400 text-xs" href="/">Cookies</a>
+          <a className="text-gray-400 text-xs" href="/">Add Choices</a>
         </li>
         <li className="left-sidebar__list-item">
           <a className="text-gray-400 text-xs" href="/">More</a>
