@@ -16,30 +16,32 @@ const container = {
 
 export const RightSidebar = () => {
   return (
-    <section className="mobile:hidden tablet:block shadow-lg p-4 sm:w-56 lg:w-1/4  h-screen">
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">Contacts</h2>
-        <AiOutlineMenu className="text-gray-600"/>
+    <section className="mobile:hidden border-2 h-full tablet:block p-4 sm:w-64 laptop:w-1/4 h-screen">
+      <div className="fixed h-full">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-bold">Contacts</h2>
+          <AiOutlineMenu className="text-gray-600"/>
+        </div>
+        <motion.ul
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="list-none"
+        >
+          {
+            contacts.map((item, index) => (
+              <li key={index} className="right-sidebar__list">
+                <a className="flex items-center py-2" href="/">
+                  <div className="h-9 w-9 rounded-full overflow-hidden">
+                    <img src={item.avatar} alt="user avatar"/>
+                  </div>
+                  <span className="pl-3"> {item.name}</span>
+                </a>
+              </li>
+            ))
+          }
+        </motion.ul>
       </div>
-      <motion.ul
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="list-none w-56"
-      >
-        {
-          contacts.map((item, index) => (
-            <li key={index}>
-              <a className="flex items-center py-2" href="/">
-                <div className="h-9 w-9 rounded-full overflow-hidden">
-                  <img src={item.avatar} alt="user avatar"/>
-                </div>
-                <span className="pl-3"> {item.name}</span>
-              </a>
-            </li>
-          ))
-        }
-      </motion.ul>
     </section>
   )
 }
