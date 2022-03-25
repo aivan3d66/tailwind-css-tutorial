@@ -1,5 +1,5 @@
-import {Avatar} from "../Header/Menu";
 import {AiOutlineFileImage} from "react-icons/ai";
+import {Avatar} from "../../common/Avatar/Avatar";
 
 export const AddPost = () => {
   return (
