@@ -3,7 +3,7 @@ import {AiOutlineMenu} from "react-icons/ai";
 
 export const Post = () => {
   return (
-    <div className="shadow-lg p-2 rounded">
+    <div className="shadow-lg p-2 rounded bg-white">
       <div className="p-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center p-3">
