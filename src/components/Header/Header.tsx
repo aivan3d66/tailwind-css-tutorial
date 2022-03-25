@@ -1,5 +1,4 @@
-import {Menu} from "./Menu";
-import {Search} from "./Search";
+import {Menu} from "./Menu/Menu";
 import {Profile} from "./Profile";
 import {motion} from "framer-motion";
 
@@ -16,7 +15,7 @@ const container = {
 
 export const Header = () => {
   return (
-    <motion.section className="flex px-4 py-2 items-center justify-between shadow">
+    <motion.section className="fixed -top-1 z-10 flex min-w-full px-4 py-2 items-center justify-between shadow bg-white">
       <motion.div
         variants={container}
         initial="hidden"
@@ -29,13 +28,12 @@ export const Header = () => {
             alt='logo'
           />
         </div>
-        <Search/>
       </motion.div>
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className='w-1/3'
+        className='w-1/4'
       >
         <Menu/>
       </motion.div>
