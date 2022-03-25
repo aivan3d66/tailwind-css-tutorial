@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className='flex justify-between space-x-7 h-full'>
+      <div className='flex justify-between space-x-7 h-full bg-slate-100'>
         <LeftSidebar/>
         <CenterContent/>
         <RightSidebar/>
