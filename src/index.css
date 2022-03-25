@@ -3,79 +3,90 @@
 @tailwind utilities;
 
 @layer components {
-    .nav-item {
-        @apply
-        relative
-        flex items-center justify-center
-        h-12 w-16 mt-2 mx-auto
-        transition-all delay-100
+  .nav-item {
+    @apply
+    relative
+    flex items-center justify-center
+    h-12 w-16 mt-2 mx-auto
+    transition-all delay-100
 
-        hover:text-blue-500
-        hover:before:absolute
-        hover:before:content-['']
-        hover:before:border-b-2
-        hover:before:border-b-blue-500
-        hover:before:w-16
-        hover:before:h-2
-        hover:before:-bottom-2.5
-        hover:before:transition-all before:delay-100
-    }
+    hover:text-blue-500
+    hover:before:absolute
+    hover:before:content-['']
+    hover:before:border-b-2
+    hover:before:border-b-blue-500
+    hover:before:w-16
+    hover:before:h-2
+    hover:before:-bottom-2.5
+    hover:before:transition-all
+  }
 
-    .nav-item__active {
-        @apply
-        text-blue-500
-        before:absolute
-        before:content-['']
-        before:border-b-2
-        before:border-b-blue-500
-        before:w-16
-        before:h-2
-        before:-bottom-2.5
-    }
+  .nav-item__active {
+    @apply
+    text-blue-500
+    before:absolute
+    before:content-['']
+    before:border-b-2
+    before:border-b-blue-500
+    before:w-16
+    before:h-2
+    before:-bottom-2.5
+  }
 
-    .nav-link {
-        @apply
-        pb-2
-    }
+  .nav-link {
+    @apply
+    pb-2
+  }
 
-    .nav-img {
-        @apply
-        text-3xl
-    }
+  .nav-img {
+    @apply
+    text-3xl
+  }
 
-    .left-sidebar__list-item {
-        @apply
-        relative
-        pr-3
-        after:absolute
-        after:content-['']
-        after:bg-gray-400
-        after:right-1
-        after:bottom-2
-        after:w-1
-        after:h-1
-        after:rounded-full
-    }
+  .left-sidebar__list-item {
+    @apply
+    relative
+    pr-3
+    after:absolute
+    after:content-['']
+    after:bg-gray-400
+    after:right-1
+    after:bottom-2
+    after:w-1
+    after:h-1
+    after:rounded-full
+  }
 
-    .left-sidebar__list {
-        @apply
-        transition-all delay-100
-        hover:text-blue-500
-    }
+  .left-sidebar__list {
+    @apply
+    px-4
+    transition-all
+    hover:bg-slate-200
+    hover:rounded-md
+  }
 
-    .menu {
-        @apply
-        hidden
-        mobile:text-sm
-        tablet:flex
-        tablet:flex-row
-    }
+  .right-sidebar__list {
+    @apply
+    w-auto
+    px-4
+    transition-all
+    hover:bg-slate-200
+    hover:rounded-md
+  }
 
-    .menu-btn {
-        @apply
-        mobile:block
-        mobile:m-auto
-        mobile:text-center
-        tablet:hidden
-    }
+  .menu {
+    @apply
+    hidden
+    mobile:text-sm
+    tablet:flex
+    tablet:flex-row
+  }
+
+  .menu-btn {
+    @apply
+    mobile:block
+    mobile:m-auto
+    mobile:text-center
+    tablet:hidden
+  }
 }
