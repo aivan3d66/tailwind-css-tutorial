@@ -1,23 +1,8 @@
 import {AiOutlineHome} from "react-icons/ai";
-import {AiOutlineNotification} from "react-icons/ai";
-import {AiOutlinePlaySquare} from "react-icons/ai";
-import {AiOutlineShopping} from "react-icons/ai";
-import {AiOutlineTeam} from "react-icons/ai";
+import {AiOutlineBell} from "react-icons/ai";
 import {AiOutlineMessage} from "react-icons/ai";
-import avatar from "./../../avatar.jpg";
-
-export const Avatar = () => {
-  return (
-    <div>
-      <img
-        className='w-7 h-7 m-auto rounded-full overflow-hidden'
-        src={avatar}
-        width='30'
-        alt="avatar"
-      />
-    </div>
-  )
-}
+import {AiOutlineSearch} from "react-icons/ai";
+import { Avatar } from "../../../common/Avatar/Avatar";
 
 export const Menu = () => {
   return (
@@ -31,12 +16,7 @@ export const Menu = () => {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="">
-            <AiOutlineNotification className="nav-img"/>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <AiOutlinePlaySquare className="nav-img"/>
+            <AiOutlineSearch className="nav-img"/>
           </a>
         </li>
         <li className="nav-item">
@@ -46,12 +26,7 @@ export const Menu = () => {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">
-            <AiOutlineShopping className="nav-img"/>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <AiOutlineTeam className="nav-img"/>
+            <AiOutlineBell className="nav-img"/>
           </a>
         </li>
         <li className="nav-item">
