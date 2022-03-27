@@ -14,7 +14,7 @@ export const Story: React.FC<StoryType> = ({name, image, photo}) => {
         backgroundPosition: "center",
         backgroundSize: "cover"
       }}
-      className="flex flex-col justify-between p-2 w-36 h-56 min-h-96 rounded-xl hover:bg-contain border-2 cursor-pointer"
+      className="flex flex-col justify-between p-2 mobile:w-32 mobile:h-48 tablet:w-36 tablet:h-56 rounded-xl hover:bg-contain border cursor-pointer"
     >
       <div className="h-9 w-9 rounded-full overflow-hidden border-2 border-amber-50">
         <img src={image} alt="user img"/>
