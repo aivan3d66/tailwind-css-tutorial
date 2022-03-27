@@ -16,7 +16,7 @@ const container = {
 
 export const RightSidebar = () => {
   return (
-    <section className="mobile:hidden border-2 h-full tablet:block p-4 sm:w-64 laptop:w-1/4 h-screen">
+    <section className="mobile:hidden tablet:hidden laptop:block border-2 h-full  p-4 sm:w-64 laptop:w-1/4 h-screen">
       <div className="fixed h-full">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold">Contacts</h2>
