@@ -1,6 +1,6 @@
 export const Copyright = () => {
   return (
-    <div className="w-60 mt-auto">
+    <div className="w-auto mt-auto">
       <ul className="list-none flex flex-wrap">
         <li className="left-sidebar__list-item">
           <a className="text-gray-400 text-xs" href="/">Privacy</a>
