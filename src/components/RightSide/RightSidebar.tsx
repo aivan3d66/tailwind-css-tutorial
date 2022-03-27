@@ -16,9 +16,10 @@ const container = {
 
 export const RightSidebar = () => {
   return (
-    <section className="fixed right-0 mobile:hidden tablet:flex tablet:w-1/3 laptop:w-1/5 desktop:w-1/5 border-4 border-blue-800 h-full p-4 h-screen">
+    <section
+      className="fixed right-0 mobile:hidden tablet:flex tablet:w-1/3 laptop:w-1/5 desktop:w-1/5 border-4 border-blue-800 h-full p-4 h-screen">
       <div className="h-full w-full">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-3">
           <h2 className="text-xl font-bold">Contacts</h2>
           <AiOutlineMenu className="text-gray-600"/>
         </div>
