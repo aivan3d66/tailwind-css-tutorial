@@ -22,6 +22,27 @@ body {
 }
 
 @layer components {
+  .menu {
+    @apply
+    hidden
+    h-14
+    mobile:text-sm
+    mobile:h-14
+    tablet:flex
+    tablet:flex-row
+  }
+
+  .menu-btn {
+    @apply
+    mobile:flex
+    mobile:items-center
+    mobile:justify-center
+    mobile:m-auto
+    mobile:h-12
+    mobile:text-center
+    tablet:hidden
+  }
+
   .nav-item {
     @apply
     relative
@@ -91,21 +112,5 @@ body {
     transition-all
     hover:bg-slate-200
     hover:rounded-md
-  }
-
-  .menu {
-    @apply
-    hidden
-    mobile:text-sm
-    tablet:flex
-    tablet:flex-row
-  }
-
-  .menu-btn {
-    @apply
-    mobile:block
-    mobile:m-auto
-    mobile:text-center
-    tablet:hidden
   }
 }
