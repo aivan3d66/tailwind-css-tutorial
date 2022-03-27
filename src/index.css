@@ -114,6 +114,20 @@ body {
     hover:rounded-md
   }
 
+  .content-container {
+    @apply
+    mobile:justify-center
+    tablet:justify-between
+    laptop:space-x-7
+    flex
+    mt-16
+    h-auto
+    bg-slate-100
+
+    border
+    border-amber-400
+  }
+
   .content {
     @apply
     mobile:w-full
