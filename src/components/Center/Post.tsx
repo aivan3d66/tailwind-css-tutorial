@@ -3,7 +3,7 @@ import {Avatar} from "../../common/Avatar/Avatar";
 
 export const Post = () => {
   return (
-    <div className="shadow-lg p-2 rounded bg-white">
+    <div className="shadow-lg mb-5 p-4 rounded-md bg-white">
       <div className="p-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center p-3">
