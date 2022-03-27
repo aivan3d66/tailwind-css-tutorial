@@ -113,4 +113,16 @@ body {
     hover:bg-slate-200
     hover:rounded-md
   }
+
+  .content {
+    @apply
+    mobile:w-full
+    mobile:h-screen
+    mobile:flex
+    mobile:flex-col
+    mobile:my-auto
+    tablet:w-2/3
+
+    border
+  }
 }
