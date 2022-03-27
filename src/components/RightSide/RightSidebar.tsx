@@ -16,8 +16,8 @@ const container = {
 
 export const RightSidebar = () => {
   return (
-    <section className="mobile:hidden tablet:hidden laptop:block border-2 h-full  p-4 sm:w-64 laptop:w-1/4 h-screen">
-      <div className="fixed h-full">
+    <section className="fixed right-0 mobile:hidden tablet:flex tablet:w-1/3 border-4 border-blue-800 h-full p-4 h-screen">
+      <div className="h-full w-full">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold">Contacts</h2>
           <AiOutlineMenu className="text-gray-600"/>
@@ -34,7 +34,7 @@ export const RightSidebar = () => {
                   <div className="h-9 w-9 rounded-full overflow-hidden">
                     <img src={item.avatar} alt="user avatar"/>
                   </div>
-                  <span className="pl-3"> {item.name}</span>
+                  <span className="pl-3">{item.name}</span>
                 </a>
               </li>
             ))
