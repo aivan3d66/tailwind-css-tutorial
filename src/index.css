@@ -107,8 +107,8 @@ body {
 
   .right-sidebar__list {
     @apply
-    w-auto
-    px-4
+    w-full
+    px-2
     transition-all
     hover:bg-slate-200
     hover:rounded-md
@@ -136,7 +136,6 @@ body {
     mobile:flex-col
     mobile:my-auto
     tablet:w-2/3
-
     border
   }
 }
