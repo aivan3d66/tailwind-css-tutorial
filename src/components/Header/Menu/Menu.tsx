@@ -6,7 +6,7 @@ import { Avatar } from "../../../common/Avatar/Avatar";
 
 export const Menu = () => {
   return (
-    <nav>
+    <nav className="h-14">
       <a className="menu-btn" href="/">Menu</a>
       <ul className="menu">
         <li className="nav-item nav-item__active">
