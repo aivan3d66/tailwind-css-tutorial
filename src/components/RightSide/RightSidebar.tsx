@@ -26,7 +26,6 @@ export const RightSidebar = () => {
           variants={container}
           initial="hidden"
           animate="show"
-          className="list-none"
         >
           {
             contacts.map((item, index) => (
