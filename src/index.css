@@ -119,6 +119,7 @@ body {
     mobile:justify-center
     tablet:justify-between
     laptop:space-x-7
+    laptop:justify-center
     flex
     mt-16
     h-auto
@@ -136,6 +137,12 @@ body {
     mobile:flex-col
     mobile:my-auto
     tablet:w-2/3
+    laptop:flex
+    laptop:w-2/4
+    desktop:w-2/4
+    desktop:px-24
+    laptop:my-auto
     border
+
   }
 }
