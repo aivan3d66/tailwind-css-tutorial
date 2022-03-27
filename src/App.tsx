@@ -6,14 +6,14 @@ import {RightSidebar} from "./components/RightSide/RightSidebar";
 
 function App() {
   return (
-    <>
+    <div className="h-full border border-amber-400">
       <Header/>
       <div className="content-container">
         <LeftSidebar/>
         <CenterContent/>
         <RightSidebar/>
       </div>
-    </>
+    </div>
   );
 }
 
