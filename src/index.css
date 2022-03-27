@@ -19,6 +19,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgba(241, 245, 249);
 }
 
 @layer components {
@@ -124,9 +125,6 @@ body {
     mt-16
     h-auto
     bg-slate-100
-
-    border
-    border-amber-400
   }
 
   .content {
@@ -143,6 +141,5 @@ body {
     desktop:px-24
     laptop:my-auto
     border
-
   }
 }
